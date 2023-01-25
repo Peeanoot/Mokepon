@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Righteous&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+     background-image: linear-gradient(45deg, #FFEBB7, #AD8E70);
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {  
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size: 80px;
+    margin: 30px 0px 20px 0px; 
+}
+
+.subtitulo {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 150px;
+    height: 100px;
+    background-color: #AD8E70;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.tarjeta-de-mokepon img {
+    width: 60px;
+}
+
+input {
+    display: none;
+}
+
+input:hover + label {
+    background-color: #FF6E31;
+}
+input:checked + label {
+    background-color: #FF6E31;
+}
+
+#boton-mascota {
+    margin-top: 20px;
+    width: 166px;
+    height: 23px;
+    background: transparent;
+    border: 3px solid #AD8E70;
+    color: black;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: stretch;
+    font-family: 'Poppins', sans-serif;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    border: 3px solid #AD8E70;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: white;
+}
+
+#mensajes {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    width: 200px;
+    background-color: #AD8E70;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton-reiniciar {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    background-color: #FF6E31;
+    color: white;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-items: center;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    } 
+}
